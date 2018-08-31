@@ -7,6 +7,7 @@ public class OtherLists {
     ArrayList<String> personalityTraitList = new ArrayList<>();
     ArrayList<String> occupationList = new ArrayList<>();
     ArrayList<String> motivationList = new ArrayList<>();
+    ArrayList<String> secretList = new ArrayList<>();
     
     public void createOtherLists() {
         
@@ -269,7 +270,45 @@ public class OtherLists {
         motivationList.add("Disgrace a rival");
         motivationList.add("Go on a pilgrimage");
         motivationList.add("Visit a famous grave");
+        motivationList.add("Get freaky!");
         //motivationList.add("");
 
+        secretList.add("Murdered someone in cold blood");
+        secretList.add("Caused the death of a loved one");
+        secretList.add("Sexual deviant");
+        secretList.add("Stole from a powerful person");
+        secretList.add("Deserter");
+        secretList.add("Secret cultist");
+        secretList.add("Demon worshipper");
+        secretList.add("Drug user");
+        secretList.add("Functioning drunk");
+        secretList.add("Planning a coup");
+        secretList.add("Traitor to their country");
+        secretList.add("Traitor to their organization");
+        secretList.add("Is really an undead in disguise");
+        secretList.add("Stole the body they are wearing");
+        secretList.add("Beats their spouse regularly");
+        secretList.add("Abuses their children");
+        secretList.add("Reformed cultist");
+        secretList.add("Reformed devil worshipper");
+        secretList.add("Recovering substance abuser");
+        secretList.add("Is a monster masquerading as a person");
+        secretList.add("Strangled their mother");
+        secretList.add("Killed their father");
+        secretList.add("Strangled their child");
+        secretList.add("Accidentally summoned a demon");
+        secretList.add("Accidentally raised the dead");
+        secretList.add("Former notorious criminal");
+        secretList.add("Belongs to a criminal organization");
+        secretList.add("Ate the flesh of their enemy");
+        secretList.add("Failed priest or monk");
+        secretList.add("A host to an interplanar horror");
+        secretList.add("Is really a nice person");
+        secretList.add("Is really a very poor person");
+        secretList.add("Secretly wealthy");
+        secretList.add("Stole their current identity");
+        secretList.add("Twin to an important person");
+        secretList.add("Disgraced noble");
+        secretList.add("Ousted ruler");
     }
 }

@@ -1,8 +1,11 @@
 package simplenpcs;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class NameLists {
+    
+    public Random rand = new Random();
     
     ArrayList<String> humanMaleList = new ArrayList<>();
     ArrayList<String> humanFemaleList = new ArrayList<>();
@@ -37,6 +40,12 @@ public class NameLists {
         humanMaleList.add("Eron");
         humanMaleList.add("Zenoes");
         humanMaleList.add("Giron");
+        humanMaleList.add("Shep");
+        humanMaleList.add("Immo");
+        humanMaleList.add("Pravad");
+        humanMaleList.add("Fjoder");
+        humanMaleList.add("Cedric");
+        humanMaleList.add("Aikyn");
         
         // human female names
         humanFemaleList.add("Taysa");
@@ -59,6 +68,8 @@ public class NameLists {
         humanFemaleList.add("Erre");
         humanFemaleList.add("Bianka");
         humanFemaleList.add("Issa");
+        humanFemaleList.add("Deire");
+        humanFemaleList.add("Grete");
         
         // elf male names
         elfMaleList.add("Kireth");
@@ -77,12 +88,14 @@ public class NameLists {
         elfMaleList.add("Edryn");
         elfMaleList.add("Harathir");
         elfMaleList.add("Paryn");
+        elfMaleList.add("Celand");
+        elfMaleList.add("Rywath");
         
         // elf female names
         elfFemaleList.add("Ylwen");
         elfFemaleList.add("Asaviel");
         elfFemaleList.add("Indil");
-        elfFemaleList.add("Vireniel");
+        elfFemaleList.add("Viniel");
         elfFemaleList.add("Gemiene");
         elfFemaleList.add("Tariel");
         elfFemaleList.add("Diniel");
@@ -91,10 +104,10 @@ public class NameLists {
         elfFemaleList.add("Hirenna");
         elfFemaleList.add("Pariel");
         elfFemaleList.add("Zannael");
-        elfFemaleList.add("Raniene");
+        elfFemaleList.add("Raniele");
         elfFemaleList.add("Kiranna");
         elfFemaleList.add("Falwen");
-        elfFemaleList.add("Erziel");
+        elfFemaleList.add("Ezdiele");
         elfFemaleList.add("Sanwen");
         elfFemaleList.add("Jiendil");
         //elfFemaleList.add("");
@@ -141,8 +154,22 @@ public class NameLists {
         dragonbornList.add("Praxor");
         dragonbornList.add("Nazhakim");
         dragonbornList.add("Wranwyr");
+        dragonbornList.add("Xymram");
         dragonbornList.add("Aqraw");
-        //dragonbornNameList.add("");
+        dragonbornList.add("Shazbrim");
+        dragonbornList.add("Zornwyr");
+        dragonbornList.add("Dabryn");
+        dragonbornList.add("Star Scale");
+        dragonbornList.add("Sharp Claw");
+        dragonbornList.add("Qizyr");
+        dragonbornList.add("Long Tail");
+        dragonbornList.add("Dvigar");
+        dragonbornList.add("Scar Snout");
+        dragonbornList.add("Vradraal");
+        dragonbornList.add("Yxamsin");
+        dragonbornList.add("Fzaram");
+        dragonbornList.add("Ghilraw");
+        //dragonbornList.add("");
         
         // savage names
         savageList.add("Chirn");
@@ -166,7 +193,7 @@ public class NameLists {
         otherList.add("Mischief");
         otherList.add("Taunt");
         otherList.add("Glimmer");
-        otherList.add("Sardonic");
+        otherList.add("Sardonious");
         otherList.add("Aloof");
         otherList.add("Coin");
         otherList.add("Vengeance");
@@ -178,9 +205,23 @@ public class NameLists {
         otherList.add("Dirge");
         otherList.add("Lament");
         otherList.add("Grinner");
+        otherList.add("Finder");
+        otherList.add("Lush");
+        otherList.add("Pellet");
+        otherList.add("Portent");
+        otherList.add("Scuttle");
+        otherList.add("Chance");
+        otherList.add("Roil");
+        otherList.add("Tumor");
+        otherList.add("Dregs");
+        otherList.add("Hide");
+        otherList.add("Dusty");
+        otherList.add("Smoke");
+        otherList.add("Dusk");
+        otherList.add("Nightfall");
+        otherList.add("Uncertain");
+        otherList.add("Certain");
         //otherList.add("");
     }
     
-         
-
 }
