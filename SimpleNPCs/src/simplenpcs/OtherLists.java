@@ -78,6 +78,13 @@ public class OtherLists {
         physicalTraitList.add("Surprisingly clean");
         physicalTraitList.add("Venerial disease");
         physicalTraitList.add("Unusual eye color");
+        physicalTraitList.add("Extra fingers");
+        physicalTraitList.add("Extra toes");
+        physicalTraitList.add("Missing toes");
+        physicalTraitList.add("Low voice");
+        physicalTraitList.add("High pitched voice");
+        physicalTraitList.add("Stooped");
+        physicalTraitList.add("Broken nose");
         //physicalTraitList.add("");
         
         // personality traits
@@ -292,7 +299,7 @@ public class OtherLists {
         secretList.add("Reformed cultist");
         secretList.add("Reformed devil worshipper");
         secretList.add("Recovering substance abuser");
-        secretList.add("Is a monster masquerading as a person");
+        secretList.add("A monster in disguise");
         secretList.add("Strangled their mother");
         secretList.add("Killed their father");
         secretList.add("Strangled their child");
