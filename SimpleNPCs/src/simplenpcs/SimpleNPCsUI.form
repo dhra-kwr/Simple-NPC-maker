@@ -49,7 +49,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="npcInfoPanel" max="32767" attributes="0"/>
@@ -64,6 +64,7 @@
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
+                      <Component id="printPanel" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -81,7 +82,9 @@
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="npcInfoPanel" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="43" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="printPanel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -127,7 +130,7 @@
                           <Component id="otherButton" min="-2" max="-2" attributes="0"/>
                           <Component id="dwarfButton" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="65" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -232,7 +235,7 @@
                           <Component id="femaleButton" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="otherGenderButton" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="40" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -347,20 +350,9 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="nameLabel" max="32767" attributes="0"/>
-                          <Component id="nameTextField" alignment="0" max="32767" attributes="0"/>
-                          <Component id="physicalTextField" max="32767" attributes="0"/>
-                          <Component id="physicalLabel" alignment="0" max="32767" attributes="0"/>
-                          <Component id="personalityLabel" alignment="0" max="32767" attributes="0"/>
-                          <Component id="personalityTextField" alignment="0" max="32767" attributes="0"/>
-                          <Component id="occupationLabel" alignment="0" max="32767" attributes="0"/>
-                          <Component id="occupationTextField" alignment="0" max="32767" attributes="0"/>
-                          <Component id="motivationLabel" alignment="0" max="32767" attributes="0"/>
-                          <Component id="motivationTextField" alignment="0" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="npcInfoScrollPane" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -369,65 +361,60 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="nameLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="nameTextField" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="physicalLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="physicalTextField" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="personalityLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="personalityTextField" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="occupationLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="occupationTextField" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="motivationLabel" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="motivationTextField" min="-2" max="-2" attributes="0"/>
+                      <Component id="npcInfoScrollPane" pref="166" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="nameLabel">
+            <Container class="javax.swing.JScrollPane" name="npcInfoScrollPane">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="npcInfoTextArea">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="printPanel">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="printNPCButton" min="-2" pref="117" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="printNPCButton" pref="78" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="printNPCButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Name"/>
+                <Property name="text" type="java.lang.String" value="PRINT!"/>
               </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="nameTextField">
-            </Component>
-            <Component class="javax.swing.JLabel" name="physicalLabel">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Physical Trait"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="physicalTextField">
-            </Component>
-            <Component class="javax.swing.JLabel" name="personalityLabel">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Personality Trait"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="personalityTextField">
-            </Component>
-            <Component class="javax.swing.JLabel" name="occupationLabel">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Occupation"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="occupationTextField">
-            </Component>
-            <Component class="javax.swing.JLabel" name="motivationLabel">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Motivation"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="motivationTextField">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="printNPCButtonActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
